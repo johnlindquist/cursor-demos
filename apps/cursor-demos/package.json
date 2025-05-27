@@ -1,0 +1,66 @@
+{
+  "name": "@cursor-demos/cursor-demos",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nx/esbuild:esbuild",
+        "outputs": [
+          "{options.outputPath}"
+        ],
+        "defaultConfiguration": "production",
+        "options": {
+          "platform": "node",
+          "outputPath": "apps/cursor-demos/dist",
+          "format": [
+            "cjs"
+          ],
+          "bundle": false,
+          "main": "apps/cursor-demos/src/main.ts",
+          "tsConfig": "apps/cursor-demos/tsconfig.app.json",
+          "assets": [
+            "apps/cursor-demos/src/assets"
+          ],
+          "esbuildOptions": {
+            "sourcemap": true,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        },
+        "configurations": {
+          "development": {},
+          "production": {
+            "esbuildOptions": {
+              "sourcemap": false,
+              "outExtension": {
+                ".js": ".js"
+              }
+            }
+          }
+        }
+      },
+      "serve": {
+        "continuous": true,
+        "executor": "@nx/js:node",
+        "defaultConfiguration": "development",
+        "dependsOn": [
+          "build"
+        ],
+        "options": {
+          "buildTarget": "@cursor-demos/cursor-demos:build",
+          "runBuildTargetDependencies": false
+        },
+        "configurations": {
+          "development": {
+            "buildTarget": "@cursor-demos/cursor-demos:build:development"
+          },
+          "production": {
+            "buildTarget": "@cursor-demos/cursor-demos:build:production"
+          }
+        }
+      }
+    }
+  }
+}

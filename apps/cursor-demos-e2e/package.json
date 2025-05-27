@@ -1,0 +1,26 @@
+{
+  "name": "@cursor-demos/cursor-demos-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@cursor-demos/cursor-demos"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/cursor-demos-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@cursor-demos/cursor-demos:build",
+          "@cursor-demos/cursor-demos:serve"
+        ]
+      }
+    }
+  }
+}
