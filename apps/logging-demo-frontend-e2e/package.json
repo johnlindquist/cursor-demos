@@ -1,0 +1,10 @@
+{
+  "name": "@cursor-demos/logging-demo-frontend-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@cursor-demos/logging-demo-frontend"
+    ]
+  }
+}

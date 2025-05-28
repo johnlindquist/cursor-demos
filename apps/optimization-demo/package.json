@@ -1,5 +1,5 @@
 {
-  "name": "@cursor-demos/cursor-demos",
+  "name": "@cursor-demos/optimization-demo",
   "version": "0.0.1",
   "private": true,
   "nx": {
@@ -12,15 +12,15 @@
         "defaultConfiguration": "production",
         "options": {
           "platform": "node",
-          "outputPath": "apps/cursor-demos/dist",
+          "outputPath": "apps/optimization-demo/dist",
           "format": [
             "cjs"
           ],
           "bundle": false,
-          "main": "apps/cursor-demos/src/main.ts",
-          "tsConfig": "apps/cursor-demos/tsconfig.app.json",
+          "main": "apps/optimization-demo/src/main.ts",
+          "tsConfig": "apps/optimization-demo/tsconfig.app.json",
           "assets": [
-            "apps/cursor-demos/src/assets"
+            "apps/optimization-demo/src/assets"
           ],
           "esbuildOptions": {
             "sourcemap": true,
@@ -49,15 +49,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "@cursor-demos/cursor-demos:build",
+          "buildTarget": "@cursor-demos/optimization-demo:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "@cursor-demos/cursor-demos:build:development"
+            "buildTarget": "@cursor-demos/optimization-demo:build:development"
           },
           "production": {
-            "buildTarget": "@cursor-demos/cursor-demos:build:production"
+            "buildTarget": "@cursor-demos/optimization-demo:build:production"
           }
         }
       }

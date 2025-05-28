@@ -1,0 +1,18 @@
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EPERM: operation not permitted 127.0.0.1:3333
+    at Server.setupListenHandle [as _listen2] (node:net:1446:21)
+    at listenInCluster (node:net:1511:12)
+    at doListen (node:net:1660:7)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1490:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EPERM',
+  errno: -1,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3333
+}

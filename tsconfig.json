@@ -8,6 +8,27 @@
     },
     {
       "path": "./apps/cursor-demos"
+    },
+    {
+      "path": "./apps/logging-demo-e2e"
+    },
+    {
+      "path": "./apps/logging-demo"
+    },
+    {
+      "path": "./apps/optimization-demo"
+    },
+    {
+      "path": "./apps/logging-demo-backend-e2e"
+    },
+    {
+      "path": "./apps/logging-demo-backend"
+    },
+    {
+      "path": "./apps/logging-demo-frontend-e2e"
+    },
+    {
+      "path": "./apps/logging-demo-frontend"
     }
   ]
 }
