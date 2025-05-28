@@ -7,6 +7,16 @@ alwaysApply: false
 
 **Your Core Task: Create or update the `docs/TECH_STACK.md` file. This document MUST strictly adhere to the 10-section structure defined below. Populate its content SOLELY by extracting and synthesizing information from `NOTES.md`, `docs/PRD.md`, and `docs/openapi.yaml` (or equivalent API specifications). If critical information for a section is genuinely absent from these sources, and only then, insert a specific `<!-- TODO: ... -->` comment.**
 
+## File Existence Check
+
+Determine which of the following files are present:
+
+```bash
+ls -1 NOTES.md docs/PRD.md docs/openapi.yaml docs/TECH_STACK.md 2>/dev/null
+```
+
+Use this list before editing.
+
 Your entire output for this rule invocation **MUST BE ONLY** the complete, raw Markdown content of the `docs/TECH_STACK.md` file.
 
 ## I. Strict Operational Constraints (MANDATORY)

@@ -7,6 +7,22 @@ alwaysApply: false
 
 **Your primary task: Meticulously update the `./cursor/rules/_project.mdc` file. Use ONLY information found within the current project's files and documentation.**
 
+## File Existence Check
+
+Quickly list potential configuration files and docs:
+
+```bash
+ls -1 package.json pnpm-lock.yaml yarn.lock pyproject.toml poetry.lock \
+go.mod pom.xml build.gradle Gemfile composer.json \
+webpack.config.js vite.config.js rollup.config.js tsconfig.json \
+next.config.js angular.json vue.config.js svelte.config.js \
+.eslintrc.js .eslintignore .prettierrc.js .prettierignore biome.json ruff.toml .editorconfig \
+.github/workflows/ gitlab-ci.yml Jenkinsfile Dockerfile \
+jest.config.js vitest.config.js cypress.json playwright.config.js docs/ 2>/dev/null
+```
+
+Use the output to see which files are available to read.
+
 ## 1. Core Objective
 
 Your goal is to populate the `./cursor/rules/_project.mdc` file. This file must accurately reflect the project's current configuration, technology stack, structure, standards, and tooling, serving as a central project reference.

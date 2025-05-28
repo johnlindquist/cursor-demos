@@ -7,6 +7,16 @@ alwaysApply: false
 
 **Your Core Task: Create or update the `docs/PRD.md` file. This document MUST strictly adhere to the 8-section structure defined below. Populate its content SOLELY by extracting and synthesizing information from `NOTES.md` (or a user-provided equivalent source). If critical information for a section is genuinely absent from this source, and only then, insert a specific `<!-- TODO: ... -->` comment.**
 
+## File Existence Check
+
+Confirm available source files first:
+
+```bash
+ls -1 NOTES.md docs/PRD.md 2>/dev/null
+```
+
+Use these results before proceeding.
+
 Your entire output for this rule invocation **MUST BE ONLY** the complete, raw Markdown content of the `docs/PRD.md` file.
 
 ## I. Strict Operational Constraints (MANDATORY)

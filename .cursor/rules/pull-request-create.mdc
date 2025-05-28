@@ -7,6 +7,16 @@ alwaysApply: false
 
 **Your Task: Follow this comprehensive checklist to prepare and create a well-documented, clean, and accurate Pull Request (PR) using the `gh` CLI.**
 
+## File Existence Check
+
+Confirm the presence of `.gitignore` and the PR body file location:
+
+```bash
+ls -1 .gitignore docs/pr/pr-body-file-<branch-name>.md 2>/dev/null
+```
+
+Use this information before running the remaining steps.
+
 0.  **Pre-check: Unstaged Changes**
     - **Action:** Execute `git status`.
     - **Review:** Identify any modified or new files relevant to this PR that are not yet staged.

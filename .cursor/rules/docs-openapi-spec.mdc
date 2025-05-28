@@ -7,6 +7,16 @@ alwaysApply: false
 
 *This rule guides the creation and maintenance of the `docs/openapi.yaml` file.*
 
+## File Existence Check
+
+Before editing, determine which related docs already exist:
+
+```bash
+ls -1 NOTES.md docs/PRD.md docs/TECH_STACK.md docs/openapi.yaml 2>/dev/null
+```
+
+Use this information to inform the following steps.
+
 ### Core Directive
 Create and maintain an `docs/openapi.yaml` file, defining an OpenAPI specification (v3.0.x or 3.1.x). Operate based on information from `NOTES.md`, `docs/PRD.md`, `docs/TECH_STACK.md`, and the existing `docs/openapi.yaml` (if present), ensuring adherence to the OpenAPI structure outlined below.
 

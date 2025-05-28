@@ -7,6 +7,16 @@ alwaysApply: false
 
 **Your task: Create a new file at `docs/STRUCTURE.md` that outlines the recommended file and directory structure for this project, along with guiding principles.**
 
+## File Existence Check
+
+Before analyzing, verify which documentation files are present:
+
+```bash
+ls -1 docs/ README.md CONTRIBUTING.md 2>/dev/null
+```
+
+Use this to know your available references.
+
 Follow these steps:
 
 1.  **Analyze Documentation:**
